@@ -117,7 +117,6 @@ body {
     background-color: #006400;
 }
 
-/* --- Estilos do Banner --- */
 .banner {
     position: relative;
     width: 100%;
@@ -182,14 +181,11 @@ body {
 @media (min-width: 768px) and (max-width: 788px) {
     .nav-links {
         gap: 10px;
-        /* Reduz o espaçamento entre os links */
     }
 
     .btn-subscribe {
         padding: 8px 12px;
-        /* Diminui o padding do botão para ocupar menos espaço */
         font-size: 0.9em;
-        /* Diminui levemente o tamanho da fonte */
     }
 }
 
@@ -232,7 +228,7 @@ body {
     .menu-sandwich-icon {
         display: block;
         position: absolute;
-        top: 133px; 
+        top: 133px;
         right: 8%;
     }
 
