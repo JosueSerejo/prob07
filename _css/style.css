@@ -75,6 +75,8 @@ body {
     height: 1.5rem;
     margin: 0;
     vertical-align: middle;
+margin-top: -5px;
+
 }
 
 /* --------- MAIN NAV --------- */
@@ -95,7 +97,7 @@ body {
     margin: 110px auto 0;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(1, 85, 22, 0.52);
-    background: linear-gradient(to right, rgba(2, 84, 2, 0.7), rgba(0, 255, 0, 0.5));
+    background: linear-gradient(to right, rgba(var(--primary-color-rgb), 0.7), rgba(var(--secondary-color-rgb), 0.5));
 }
 
 .logo img {
@@ -255,7 +257,7 @@ body {
     bottom: 0;
     width: 100%;
     height: 3px;
-    background-color: var(--accent-color);
+    background-color: var(--secondary-color);
 }
 
 .program-grid {
@@ -306,7 +308,8 @@ body {
     font-size: 0.9em;
 }
 
-.activity-time, .activity-location {
+.activity-time,
+.activity-location {
     display: flex;
     align-items: center;
     gap: 5px;
