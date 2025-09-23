@@ -218,6 +218,24 @@ body {
     gap: 20px;
 }
 
+.program-content h2 {
+    position: relative;
+    padding-bottom: 10px;
+    display: inline-block;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+}
+
+.program-content h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--secondary-color);
+}
+
 .program-category {
     background: linear-gradient(to right, rgba(var(--primary-color-rgb), 0.1), rgba(var(--secondary-color-rgb, 0.05)));
     padding: 20px;
@@ -250,6 +268,24 @@ body {
     margin-top: 0;
     margin-bottom: 10px;
     font-size: 1.1em;
+}
+
+.activity-details {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.activity-time, .activity-time, .activity-location {
+    color: var(--secondary-color);
+    font-size: 0.9em;
+}
+
+.activity-description {
+    color: #333;
+    line-height: 1.4;
+    text-align: justify;
 }
 
 /* --------- MEDIA QUERIES --------- */
