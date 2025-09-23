@@ -10,11 +10,16 @@
     --background-color: #dfdfdf;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: var(--font-family);
     background-color: var(--background-color);
+    height: 2000px;
 }
 
 .institutional-header {
@@ -208,7 +213,7 @@ body {
     .institutional-header {
         display: flex;
         flex-direction: row;
-        justify-content: space-between; 
+        justify-content: space-between;
         align-items: center;
         padding: 0.5rem 2rem;
     }
@@ -219,16 +224,16 @@ body {
     }
 
     .institutional-logo img {
-        height: 2.5rem; 
+        height: 2.5rem;
     }
 
     .institutional-name {
-        flex: 1; 
+        flex: 1;
         text-align: center;
     }
 
     .institutional-links {
-        flex: 1; 
+        flex: 1;
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -277,41 +282,83 @@ body {
     /* --------- SOBRE --------- */
     .about-content {
         display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        gap: 30px;
-    }
-
-    .about-text {
-        flex: 2; 
-        text-align: justify;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 30px;
+        max-width: 1200px;
+        /* pode expandir mais no desktop */
+        margin: 0 auto;
+        /* centraliza o container */
     }
 
     .about-img {
         flex: 1;
-        max-width: 500px; 
-        text-align: right; 
+        width: 100%;
+        max-width: none;
+        /* deixa a imagem crescer */
+        text-align: center;
     }
 
     .about-img img {
-        width: 100%;   
-        height: auto; 
-        max-width: 500px; 
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 8px;
+        display: block;
+    }
+
+}
+
+/* --------- SOBRE DESKTOP --------- */
+@media (min-width: 760px) {
+    .about-content {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 40x;
+    }
+
+    .about-text {
+        flex: 2;
+        text-align: justify;
+    }
+
+    .about-content h2 {
+        color: var(--primary-color);
+    }
+
+    .about-img {
+        flex: 1.2;
+        text-align: right;
+        margin: 0;
+
+    }
+
+    .about-img img {
+        width: 100%;
+        max-width: 600px;
+        margin-top: 100px;
     }
 
     .about-caption {
-        font-size: 0.9em;
-        color: #008000;
+        text-align: right;
+        font-size: 0.95em;
+        color: var(--primary-color);
         margin-top: 5px;
-        display: block;
-        text-align: right; 
+    }
+
+    .about-caption {
+        text-align: center;
+
+
     }
 }
 
 
+
+
 @media (min-width: 768px) and (max-width: 1024px) {
     .nav-links {
-        gap: 15px; 
+        gap: 15px;
     }
 
     .btn-subscribe {
