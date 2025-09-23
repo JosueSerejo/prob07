@@ -30,7 +30,8 @@ body {
     background-color: var(--institutional-header-color);
     color: var(--text-header-color);
     display: flex;
-    flex-direction: column; /* mobile first */
+    flex-direction: column;
+    /* mobile first */
     align-items: center;
     text-align: center;
     border-bottom: 2px solid var(--text-header-color);
@@ -199,7 +200,7 @@ body {
 .about-img img {
     width: 100%;
     height: auto;
-    max-width: 600px; 
+    max-width: 600px;
     border-radius: 10px;
     display: block;
 }
@@ -207,23 +208,44 @@ body {
 .about-caption {
     font-size: 0.95em;
     color: var(--secondary-color);
-    text-align: center; 
+    text-align: center;
     margin-top: 5px;
 }
 
-/* --------- PROGRAMAÇÃO / PROGRAM --------- */
+/* --- PROGRAMAÇÃO ATUALIZADA --- */
+#program {
+    background-image: url('../_img/background/program.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 40px 20px;
+    position: relative;
+}
+
+#program::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
 .program-content {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .program-content h2 {
+    color: #fff;
     position: relative;
     padding-bottom: 10px;
     display: inline-block;
-    color: var(--primary-color);
-    margin-bottom: 30px;
 }
 
 .program-content h2::after {
@@ -233,65 +255,74 @@ body {
     bottom: 0;
     width: 100%;
     height: 3px;
-    background-color: var(--secondary-color);
+    background-color: var(--accent-color);
 }
 
-.program-category {
-    background: linear-gradient(to right, rgba(var(--primary-color-rgb), 0.1), rgba(var(--secondary-color-rgb, 0.05)));
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow:0 2px 6px rgba(var(--primary-color-rgb), 0.2);
+.program-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-top: 30px;
 }
 
-.program-category h3 {
+.program-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.program-card:hover {
+    transform: translateY(-5px);
+}
+
+.program-date {
+    font-size: 1.5em;
     color: var(--primary-color);
-    margin-top: 0;
-    margin-bottom: 20px;
-    font-size: 1.3em;
+    font-weight: bold;
     border-bottom: 2px solid var(--secondary-color);
-    padding-bottom: 8px;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 .activity-item {
-    margin-bottom: 25px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid rgba(var(--primary-color-rgb), 0.2);
+    margin-top: 20px;
 }
 
-.activity-item:last-child {
-    border-bottom: none;
-    margin-bottom: 0;
-}
-
-.activity-item h4 {
-    color: var(--primary-color);
-    margin-top: 0;
-    margin-bottom: 10px;
-    font-size: 1.1em;
+.activity-title {
+    font-size: 1.2em;
+    color: var(--secondary-color);
+    margin: 0;
 }
 
 .activity-details {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 8px;
-    margin-bottom: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 5px;
+    color: #555;
+    font-size: 0.9em;
 }
 
-.activity-time, .activity-time, .activity-location {
-    color: var(--secondary-color);
-    font-size: 0.9em;
+.activity-time, .activity-location {
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 .activity-description {
     color: #333;
     line-height: 1.4;
-    text-align: justify;
+    margin-top: 10px;
 }
+
 
 /* --------- MEDIA QUERIES --------- */
 
 /* Desktop / Tablet */
-@media (min-width: 760px) {
+@media (min-width: 768px) {
 
     /* HEADER INSTITUCIONAL - 3 COLUNAS */
     .institutional-header {
@@ -378,10 +409,15 @@ body {
     .about-caption {
         text-align: center;
     }
+
+    /* Layout de Programação para Desktop */
+    .program-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 /* Tablet específico */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
     .nav-links {
         gap: 15px;
     }
