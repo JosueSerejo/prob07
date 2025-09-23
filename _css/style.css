@@ -225,6 +225,33 @@ body {
     box-shadow:0 2px 6px rgba(var(--primary-color-rgb), 0.2);
 }
 
+.program-category h3 {
+    color: var(--primary-color);
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.3em;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 8px;
+}
+
+.activity-item {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(var(--primary-color-rgb), 0.2);
+}
+
+.activity-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.activity-item h4 {
+    color: var(--primary-color);
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
 /* --------- MEDIA QUERIES --------- */
 
 /* Desktop / Tablet */
