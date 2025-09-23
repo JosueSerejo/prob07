@@ -209,6 +209,11 @@ body {
     margin-top: 5px;
 }
 
+/* --------- PROGRAMAÇÃO / PROGRAM --------- */
+.program-content {
+    display: grid;
+}
+
 /* --------- MEDIA QUERIES --------- */
 
 /* Desktop / Tablet */
