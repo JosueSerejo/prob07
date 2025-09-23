@@ -197,7 +197,7 @@ body {
 .about-img img {
     width: 100%;
     height: auto;
-    max-width: 600px; /* limite para desktop */
+    max-width: 600px; 
     border-radius: 10px;
     display: block;
 }
@@ -205,7 +205,7 @@ body {
 .about-caption {
     font-size: 0.95em;
     color: var(--secondary-color);
-    text-align: center; /* mobile */
+    text-align: center; 
     margin-top: 5px;
 }
 
