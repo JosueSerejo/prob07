@@ -321,6 +321,32 @@ margin-top: -5px;
     margin-top: 10px;
 }
 
+/* --- AÇÕES VERDES --- */
+body{
+    background-color: rgb(40, 190, 133);
+ }
+
+.container{
+    display: flex;
+    background-color: rgb(49, 147, 96); 
+    gap: 20px;
+    height: 700px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: 400px;
+    text-align: center;
+    }
+
+.card{
+    width: 350px;
+    height: 350px;
+    background-color: rgb(35, 85, 51);
+    font-size: 19px;
+    color: white;
+}
+
 
 /* --------- MEDIA QUERIES --------- */
 
