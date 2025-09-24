@@ -533,6 +533,7 @@ body {
     width: 26px;
     height: 26px;
     transition: transform 0.3s ease;
+    filter: invert(100%);
 }
 
 .footer-social-media a:hover .social-icon-img {
@@ -555,7 +556,6 @@ body {
     color: #a4e5a0;
 }
 
-/* Linha divisória */
 .footer-divider {
     border: 0;
     border-top: 1px solid #777;
@@ -740,3 +740,4 @@ body {
     }
 
 }
+
