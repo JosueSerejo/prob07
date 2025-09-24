@@ -10,7 +10,9 @@
     --primary-color-rgb: 0, 77, 0;
     --secondary-color: #008000;
     --secondary-color-rgb: 0, 128, 0;
+    --third-color: #9cecd1 ;
     --background-color: #dfdfdf;
+    --green-actions-bg: #f1f1f1;
 }
 
 /* --------- GLOBAIS --------- */
@@ -114,7 +116,7 @@ body {
 }
 
 .nav-links li a:hover {
-    color: var(--primary-color);
+    color: var(--third-color);
 }
 
 .btn-subscribe {
@@ -327,7 +329,7 @@ body {
 /* --- SEÇÃO AÇÕES VERDES --- */
 #greenactions {
     padding: 40px 20px;
-    background-color: #f0f8ff;
+    background-color: var(--green-actions-bg);
 }
 
 .container-green-actions {
@@ -359,6 +361,10 @@ body {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+.card-green-actions img{
+    height: 50px;
+}
+
 .card-green-actions h1 {
     margin: 0;
     font-size: 0;
@@ -377,6 +383,10 @@ body {
     line-height: 1.6;
 }
 
+#submissions{
+    border-top: var(--primary-color) solid 2px;
+
+}
 /* --------- MEDIA QUERIES --------- */
 @media (min-width: 768px) {
 
