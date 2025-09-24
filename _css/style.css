@@ -10,7 +10,7 @@
     --primary-color-rgb: 0, 77, 0;
     --secondary-color: #008000;
     --secondary-color-rgb: 0, 128, 0;
-    --third-color: #9cecd1 ;
+    --third-color: #9cecd1;
     --background-color: #dfdfdf;
     --green-actions-bg: #f1f1f1;
 }
@@ -361,7 +361,7 @@ body {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.card-green-actions img{
+.card-green-actions img {
     height: 50px;
 }
 
@@ -385,7 +385,7 @@ body {
 
 /* --------- FORMULARIO --------- */
 
-#submissions{
+#submissions {
     border-top: var(--primary-color) solid 2px;
 
 }
@@ -500,6 +500,7 @@ body {
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0, 77, 0, 0.3);
 }
+
 /* --------- MEDIA QUERIES --------- */
 @media (min-width: 768px) {
 
@@ -593,17 +594,17 @@ body {
     }
 
     .program-content .section-title {
-    color: #fff; 
-}
+        color: #fff;
+    }
 
     .cards-flex-container {
         flex-direction: row;
         justify-content: space-between;
-        gap: 20px; 
+        gap: 20px;
     }
 
     .card-green-actions {
-        flex: 1; 
-        max-width: 30%; 
+        flex: 1;
+        max-width: 30%;
     }
 }
