@@ -61,7 +61,8 @@ O projeto deve conter:
 - `img/` → Pasta com imagens utilizadas  
 - (Outros `.html` e `.css` opcionais)
 
-Entrega: **Link do repositório GitHub (público) via SIGAA**  
+Entrega: **https://github.com/JosueSerejo/prob07**  
+Acesso: **https://prob07.onrender.com**
 
 ---
 
