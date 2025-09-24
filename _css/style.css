@@ -322,11 +322,8 @@ margin-top: -5px;
 }
 
 /* --- AÇÕES VERDES --- */
-body{
-    background-color: rgb(40, 190, 133);
- }
 
-.container{
+.container-green-actions{
     display: flex;
     background-color: rgb(49, 147, 96); 
     gap: 20px;
@@ -339,7 +336,7 @@ body{
     text-align: center;
     }
 
-.card{
+.card-green-actions{
     width: 350px;
     height: 350px;
     background-color: rgb(35, 85, 51);
